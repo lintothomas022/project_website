@@ -1,0 +1,196 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Flexbox layout for sticky footer */
+}
+
+/* Content Wrapper */
+.content {
+    flex: 1; /* Allows the content to grow and push the footer down */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between links and search bar */
+    align-items: center;
+    background-color: #930064;
+    padding: 7px 20px;
+}
+
+/* Navigation Links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+.nav-links a:hover {
+    background-color: #5e3a08;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #714b1b;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px;
+    background-color: #008080;
+}
+
+header .image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden; /* Ensure content inside the circle stays within bounds */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the circle */
+}
+
+header .title {
+    margin-top: 15px; /* Add spacing between the image and title */
+    text-align: center; /* Center-align the text */
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Lucida Fax', serif;
+}
+
+header .subtitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 5px;
+    text-align: center; /* Center-align subtitle */
+    font-family: 'Bodoni MT Black', serif;
+}
+
+/* Main Content Section */
+.main-content {
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin: 20px;
+    border-radius: 10px; /* Optional: Rounded corners for the content section */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for content section */
+}
+
+.main-content h2 {
+    font-size: 1.8em;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: left; /* Center-align the heading */
+}
+
+.main-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 10px;
+    text-align: justify; /* Align text to both sides */
+}
+
+.main-content p.right-align {
+    text-align: right; /* Align the paragraph to the right */
+}
+
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
+    grid-gap: 20px; /* Space between images */
+    justify-items: center; /* Center images horizontally */
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.image-item {
+    position: relative; /* Allow absolute positioning of the link */
+    width: 250px;
+    height: 250px;
+}
+
+.image-item a {
+    display: block; /* Make the link take up the whole area */
+    height: 100%; /* Make the anchor tag fill the entire container */
+    width: 100%; /* Make the anchor tag fill the entire container */
+    position: relative; /* Needed for absolute positioning of the text */
+}
+
+.image-item img {
+    width: 100%; /* Ensure image takes full width */
+    height: 100%; /* Ensure image takes full height */
+    object-fit: cover; /* Ensures image fills the container proportionally */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.image-item a span {
+    position: absolute; /* Position the text inside the image */
+    bottom: 10px; /* Distance from the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text horizontally */
+    font-size: 1.2em;
+    color: #ffffff; /* Text color */
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Background for readability */
+    padding: 5px 10px; /* Optional: Padding around text */
+    border-radius: 5px; /* Optional: Rounded corners for the link */
+}
+
+.image-item a:hover {
+    text-decoration: none;
+}
+
+.image-item a span:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+
+/* Footer */
+footer {
+    background-color: #14012b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
