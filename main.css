@@ -30,14 +30,6 @@ nav {
     font-size: 1.2em;
 }
 
-.nav-links a:hover {
-    background-color: #5e3a08;
-}
-
-.search-bar button:hover {
-    background-color: #714b1b;
-}
-
 /* Header Section */
 header {
     display: flex;
