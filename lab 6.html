@@ -31,12 +31,58 @@
         <section class="main-content">
             <h2>Data Collection</h2>
             <li>Five different sets of data was collected to train. Those datas were standing, sitting, walking, descending and ascending stairs. For each activity we started and stopped the data processing via bluetooth connection. </li>
-            
+            <li>
+              <a href="BLE_Data_Collection_Code.ino" download="BLE_Data_Collection_Code.ino">Click here to download BLE_Data_Collection_Code.ino code.</a>
+        </li> 
+            <li>
+               <img src="data collection.png" alt="data collection.png" width="600">
+            </li>
+             <li>
+              <a href="standing.csv" download="standing.csv">Click here to download standing.csv</a>
+            </li>
+             <li>
+                  <a href="sitting.csv" download="sitting.csv">Click here to download sitting.csv</a>
+            </li>
+             <li>
+                  <a href="walking.csv" download="walking.csv">Click here to download walking.csv</a>
+            </li>
+             <li>
+                  <a href="ascending_stairs.csv" download="ascending_stairs.csv">Click here to download ascending_stairs.csv</a>
+            </li>
+             <li>
+                  <a href="ascending_stairs.csv" download="ascending_stairs.csv">Click here to download ascending_stairs.csv</a>
+            </li>
           <h2>Training in googkle colab</h2>
           <li>The data collected was used to train using google colab.</li>
-          
-         
-            
-            
+        <li>The data we collected for ascending and descendinmg stairs was in a single shot but using time stamp we where able to differentiate it.The gyroscope y and z axis was combined together to one coloumn in csv file, since z axis has all negative values it was easy to separate.</li>
+        <li>
+           <img src="Data processed old.jpg" alt="Data processed old.jpg" width="600">
+        </li>
+        <li>
+           <img src="Data processed new.jpg" alt="Data processed new.jpg" width="600">
+        </li>
+        <li>
+              <a href="JC_Lab_6_IMU_Processing.ipynb" download="JC_Lab_6_IMU_Processing.ipynb">Click here to download Google Colab work</a>
+        </li>
+         <h2>Activity Prediction</h2>
+          <li>The model.h file downloaded from google colab was used to program the microcontroller.</li>  
+         <li>
+              <a href="IMU_Classifier.ino" download="IMU_Classifier.ino">Click here to download IMU_Classifier.ino code.</a>
+        </li>  
+        <li>
+              <a href="model-v2.h" download="model-v2.h">Click here to download model-v2.h file</a>
+        </li> 
+        <li>The model.h file downloaded from google colab was used to program the microcontroller.</li>
+        <li>
+           <img src="Data processed new.jpg" alt="Data processed new.jpg" width="600">
+        </li>
+        <h2>Presentation</h2>
+        <li>Sitting activity is more accurately being predicted during the recognition.</li>
+        <li>
+                <video controls width="600">
+                  <source src="Demo video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+        
 </body>
 </html>
