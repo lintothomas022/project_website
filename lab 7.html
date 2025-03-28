@@ -78,13 +78,23 @@
 
         <h2>Inference</h2>
         <li>The model export from Edge Impulse includes the files necessary to run inference on our XIAO. 
-            However, we needed to make two small adjustments before testing the model.
+            However, we needed to make two small adjustments before testing the model.</li>
 
-            After uploading the ZIP file downloaded from Edge Impulse, we enabled the ESP NN Accelerator by replacing the ESP-NN folder in our esp32_camera sketch with the one made available
+           <li>After uploading the ZIP file downloaded from Edge Impulse, we enabled the ESP NN Accelerator by replacing the ESP-NN folder in our esp32_camera sketch with the one made available
               <a href="https://github.com/Mjrovai/XIAO-ESP32S3-Sense/blob/main/ESP-NN.zip" download="https://github.com/Mjrovai/XIAO-ESP32S3-Sense/blob/main/ESP-NN.zip">here.</a> 
             More detailed instructions for this process are provided <a href="https://wiki.seeedstudio.com/tinyml_course_Image_classification_project/#step-3-run-the-example-sketch" download="https://wiki.seeedstudio.com/tinyml_course_Image_classification_project/#step-3-run-the-example-sketch">here.</a></li>
-            
+          <li>
+            <img src="replacing ESP-NN folder.png" alt="ESP-NN.png" width="600">
+         </li>    
 
+        <li>PSRAM need to be enabled before continuing.</li>
+        <li>
+            <img src="enabiling psram.png" alt="PSRAM.png" width="600">
+         </li> 
+        <li>testing was done on image of atoy car due to the absence of it at the time and it predicted very well.</li>
+       <li>
+            <img src="Detection first.png" alt="detection.png" width="600">
+         </li>  
             
 </body>
 </html>
