@@ -39,7 +39,9 @@
          <li>
                <img src="car images.png" alt="code to capture image.png" width="600">
          </li>
+            
         <h2>Model Training</h2>
+            
         <li>Using Edge Impulse to train a FOMO (Faster Objects, More Objects) model for object detection 
             which involves labeling each image by drawing a bounding box around the subject (e.g., cars), creating an impulse, 
             defining model hyperparameters, training the model, and exporting the trained model. 
@@ -69,6 +71,18 @@
         <li>
             <img src="training results.png" alt="results.png" width="600">
          </li>
+        <li>Finally we export the model after training.</li>
+         <li>
+            <img src="building and exporting the model.png" alt="exporting.png" width="600">
+         </li>   
+
+        <h2>Inference</h2>
+        <li>The model export from Edge Impulse includes the files necessary to run inference on our XIAO. 
+            However, we needed to make two small adjustments before testing the model.
+
+            After uploading the ZIP file downloaded from Edge Impulse, we enabled the ESP NN Accelerator by replacing the ESP-NN folder in our esp32_camera sketch with the one made available
+              <a href="https://github.com/Mjrovai/XIAO-ESP32S3-Sense/blob/main/ESP-NN.zip" download="https://github.com/Mjrovai/XIAO-ESP32S3-Sense/blob/main/ESP-NN.zip">here.</a> 
+            More detailed instructions for this process are provided here.</li>
 
             
 </body>
