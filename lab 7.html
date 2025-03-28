@@ -91,10 +91,35 @@
         <li>
             <img src="enabiling psram.png" alt="PSRAM.png" width="600">
          </li> 
-        <li>testing was done on image of atoy car due to the absence of it at the time and it predicted very well.</li>
+        <li>Testing was done on image of atoy car due to the absence of it at the time and it predicted very well.</li>
        <li>
             <img src="Detection first.png" alt="detection.png" width="600">
          </li>  
+     <li>
+        <video controls width="600">
+          <source src="on-screen-test.m4v" type="video/m4v">
+          Your browser does not support the video tag.
+        </video>
+    </li>
             
+     <h2>Finite State Machine</h2>
+    <li>The final step of this project involved creating a finite state machine (FSM) that is represented as a traffic light.
+        The FSM needed to handle four states: 1) car go, 2) car wait, 3) pedestrian go, and 4) pedestrian wait.</li>
+    <li>We replicated one of the example circuits featured on <a href="https://www.circuitdiagram.co/traffic-light-circuit-diagram-on-breadboard/" 
+                                                                  download="https://www.circuitdiagram.co/traffic-light-circuit-diagram-on-breadboard/">this webpage.</a>
+        as a starting point for our project. This circuit is comprised of the XIAO ESP32S3 Sense, 3 LEDs (red, yellow, and green), four resistors (3x 470Ω and 1x 1kΩ), and a push button.
+        We also used the builtin LED of the microcontroller to handle the pedestrian signal.</li>
+    <li>
+        <img src="bread board circuit.png" alt="circuit diagram.png" width="600">
+     </li>  
+    <li>We tested the basic functionality of the FSM before hooking up our model.
+        This allowed us to debug connection issues before introducing the additional complexity of our model code. 
+        The test program (available <a href="https://drive.google.com/file/d/10Cym7Vk4zf7iqiKZvDMKuFgNNe4DB4WH/view?usp=drive_link" download="https://drive.google.com/file/d/10Cym7Vk4zf7iqiKZvDMKuFgNNe4DB4WH/view?usp=drive_link">here</a> ) simply activates each LED relative to the number of button presses.</li>
+     <li>
+        <video controls width="600">
+          <source src="led-test.m4v" type="video/m4v">
+          Your browser does not support the video tag.
+        </video>
+    </li>
 </body>
 </html>
